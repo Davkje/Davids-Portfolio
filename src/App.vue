@@ -3,6 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import HeroSection from './components/HeroSection.vue'
 import TechSection from './components/TechSection.vue'
+import FeaturedProjects from './components/FeaturedProjects.vue'
+import SkillsSection from './components/SkillsSection.vue'
 </script>
 
 <template>
@@ -18,6 +20,8 @@ import TechSection from './components/TechSection.vue'
   <RouterView />
   <HeroSection />
   <TechSection />
+  <FeaturedProjects />
+  <SkillsSection />
 </template>
 
 <style scoped lang="scss"></style>
