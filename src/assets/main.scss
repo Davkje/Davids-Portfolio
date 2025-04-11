@@ -1,0 +1,34 @@
+@import './base.scss';
+
+#app {
+  max-width: 100vw;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.header-wrapper {
+  background-color: yellow;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(80, 77, 73);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 113, 189);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: white;
+  }
+}

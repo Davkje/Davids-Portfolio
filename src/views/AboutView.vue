@@ -1,15 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="about">
+    <h1>About</h1>
+    <p>Test Text Here.</p>
+  </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped lang="scss">
+h1 {
+  color: #427fb9;
 }
 </style>
