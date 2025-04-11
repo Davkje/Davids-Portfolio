@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="projects-section">
+  <div id="featured-projects" class="projects-section">
     <h2>Featured Projects</h2>
     <section class="projects">
       <div class="project-container">
@@ -85,10 +85,13 @@
   width: 100%;
   min-width: 500px;
   padding: 1rem;
-  background-color: rgb(237, 215, 117);
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    color: white;
+  }
 
   .projects {
     display: flex;
@@ -99,13 +102,12 @@
     height: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgb(237, 215, 117);
 
     .project-container {
       color: black;
       width: clamp(500px, 700px, 100%);
       height: 100%;
-      background-color: lightgray;
+      background-color: rgb(244, 244, 244);
       border-radius: 10px;
       padding: 1rem;
       display: flex;
@@ -129,7 +131,7 @@
         gap: 0.5rem;
         margin-top: 1rem;
         span {
-          background-color: rgb(237, 215, 117);
+          background-color: rgb(255, 229, 114);
           padding: 0.5rem;
           border-radius: 6px;
         }

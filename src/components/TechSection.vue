@@ -26,17 +26,14 @@
 <style scoped lang="scss">
 .tech-section {
   width: 100%;
-  height: 500px;
-  background-color: aquamarine;
+  height: 400px;
+  background-color: rgb(177, 248, 185);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-  }
+  padding: 2rem;
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +41,6 @@
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
-    p {
-      color: black;
-    }
   }
 }
 </style>

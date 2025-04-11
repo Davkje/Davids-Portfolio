@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection.vue'
 import TechSection from './components/TechSection.vue'
 import FeaturedProjects from './components/FeaturedProjects.vue'
 import SkillsSection from './components/SkillsSection.vue'
+import ContactSection from './components/ContactSection.vue'
 </script>
 
 <template>
@@ -18,10 +19,6 @@ import SkillsSection from './components/SkillsSection.vue'
   </header>
 
   <RouterView />
-  <HeroSection />
-  <TechSection />
-  <FeaturedProjects />
-  <SkillsSection />
 </template>
 
 <style scoped lang="scss"></style>

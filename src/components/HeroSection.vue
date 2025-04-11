@@ -27,10 +27,20 @@
         multiple projects for artists, labels, commercials and tv.
       </p>
       <div class="links-container">
-        <a href="">LinkedIn</a>
-        <a href="">Github</a>
-        <a href="">Instagram</a>
-        <a href="">Email</a>
+        <a
+          href="https://www.linkedin.com/in/david-kjellstrand-b6760113a/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/Davkje" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="mailto:david.kjellstrand@gmail.com">Email</a>
+        <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </div>
+      <div class="go-to-portfolio">
+        <a href="#featured-projects">See my portfolio below</a>
       </div>
     </div>
   </div>
@@ -38,6 +48,7 @@
 
 <style scoped lang="scss">
 .hero-section {
+  color: black;
   width: 100%;
   height: 700px;
   background-image: url('../assets/images/profile_pic.jpg');
@@ -46,41 +57,46 @@
   align-items: center;
   background-size: cover;
   .hero-container {
-    background-color: aliceblue;
+    background-color: rgb(237, 237, 237);
     width: 80%;
-    max-width: 800px;
+    max-width: 1100px;
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
     .top-section {
-      background-color: rgba(0, 0, 0, 0.11);
-      padding: 1rem;
       width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       gap: 1rem;
       .profile-img {
-        width: 30%;
-        height: 30%;
+        width: 20%;
+        height: 20%;
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 50%;
       }
       .top-right-section {
         color: black;
-        background-color: rgba(0, 0, 0, 0.11);
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        h1 {
+          line-height: normal;
+        }
+        h2 {
+          font-weight: 100;
+        }
       }
     }
     p {
       color: black;
-      font-size: 1.2rem;
       line-height: 1.5rem;
       margin-top: 1rem;
     }
     .links-container {
-      background-color: rgba(0, 0, 0, 0.183);
       display: flex;
       margin: auto;
       max-width: 500px;
@@ -89,10 +105,18 @@
       a {
         color: black;
         text-decoration: none;
-        font-size: 1.2rem;
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+    .go-to-portfolio {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: black;
       }
     }
   }

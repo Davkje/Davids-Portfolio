@@ -63,17 +63,13 @@
 <style scoped lang="scss">
 .skills-section {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   color: black;
   background-color: rgb(226, 186, 224);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
+  padding: 1rem;
   .skills {
     display: flex;
     flex-wrap: wrap;
@@ -83,17 +79,13 @@
     margin-top: 1rem;
     .skill-column {
       width: 200px;
-      background-color: lightgray;
+      background-color: rgb(255, 255, 255);
       border-radius: 10px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
       ul {
         list-style-type: none;
         padding: 0;

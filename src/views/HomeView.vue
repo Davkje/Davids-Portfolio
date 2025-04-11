@@ -1,9 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import HeroSection from '../components/HeroSection.vue'
+import TechSection from '../components/TechSection.vue'
+import FeaturedProjects from '../components/FeaturedProjects.vue'
+import SkillsSection from '../components/SkillsSection.vue'
+import ContactSection from '../components/ContactSection.vue'
+</script>
 
 <template>
-  <main>
-    <h1>Home</h1>
-    <p>Test Text Here.</p>
+  <main class="home">
+    <HeroSection />
+    <TechSection />
+    <FeaturedProjects />
+    <SkillsSection />
+    <ContactSection />
   </main>
 </template>
 

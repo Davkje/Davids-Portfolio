@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import AboutSection from '../components/AboutSection.vue'
+</script>
+
 <template>
   <main class="about">
-    <h1>About</h1>
-    <p>Test Text Here.</p>
+    <AboutSection />
   </main>
 </template>
 
