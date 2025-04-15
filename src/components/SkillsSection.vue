@@ -49,7 +49,6 @@
           <li>Responsive Design</li>
           <li>Cross-Browser Compatibility</li>
           <li>Working with API's</li>
-          <li>Team Communication (Slack, Trello)</li>
         </ul>
       </div>
       <div class="skill-column">
@@ -70,15 +69,16 @@
   width: 100%;
   min-height: 500px;
   color: black;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--c-black);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  // padding: 1rem;
   h2 {
-    color: rgb(255, 255, 255);
+    color: var(--c-white-soft);
   }
   .skills {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,9 +86,8 @@
     gap: 1rem;
     margin-top: 1rem;
     .skill-column {
-      width: 200px;
-      border: solid rgb(248, 248, 248) 2px;
-      background: linear-gradient(to bottom, #ffffff, #d8d8d8);
+      width: clamp(4rem, 300px, 40%);
+      background: var(--gradient-white-soft);
       border-radius: 10px;
       padding: 1rem;
       display: flex;
@@ -97,9 +96,11 @@
       align-items: center;
       ul {
         list-style-type: none;
+        margin-top: 1rem;
         padding: 0;
+        text-align: center;
         li {
-          font-size: 1.2rem;
+          font-size: clamp(1rem, 1.8vw, 1.2rem);
           margin-bottom: 0.5rem;
         }
       }

@@ -15,7 +15,6 @@
         <div class="top-right-section">
           <h1>David Kjellstrand</h1>
           <h2>Front End Developer</h2>
-          <!-- <p>Stockholm</p> -->
         </div>
       </div>
       <p>
@@ -48,19 +47,18 @@
 
 <style scoped lang="scss">
 .hero-section {
-  color: black;
+  color: var(--c-black);
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   background-image: url('../assets/images/bg.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
+  padding: 2rem 1rem;
   .hero-container {
-    background: linear-gradient(to bottom, #ffffff, #fbfbfb);
-    width: 80%;
-    max-width: 1100px;
-    margin: auto;
+    background: var(--gradient-white-soft);
+    width: clamp(300px, 90%, 1100px);
     padding: 2rem;
     border-radius: 8px;
     .top-section {
@@ -77,23 +75,20 @@
         border-radius: 50%;
       }
       .top-right-section {
-        color: black;
-        width: 100%;
         height: 100%;
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
-        justify-content: center;
         h1 {
           line-height: normal;
         }
         h2 {
-          font-weight: 100;
+          font-weight: 500;
+          line-height: normal;
         }
       }
     }
     p {
-      color: black;
-      line-height: 1.5rem;
       margin-top: 1rem;
     }
     .links-container {
@@ -110,11 +105,11 @@
       align-items: center;
       a {
         color: black;
-        background-color: rgb(255, 237, 158);
+        background-color: var(--c-yellow);
         padding: 0.5rem 1.5rem;
         border-radius: 8px;
         &:hover {
-          background-color: rgb(255, 229, 112);
+          background-color: var(--c-light-yellow);
         }
       }
     }

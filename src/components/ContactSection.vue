@@ -42,7 +42,8 @@
   align-items: center;
   background-size: cover;
   .contact-container {
-    background-color: rgb(255, 229, 114);
+    background-color: #ffe572;
+    background: radial-gradient(circle, #ffe572, #ffdf50);
     border-radius: 10px;
     width: 80%;
     max-width: 80%;
@@ -60,9 +61,10 @@
     }
     .links-container {
       display: flex;
+      flex-wrap: wrap;
       margin: auto;
       max-width: 500px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-top: 1rem;
       gap: 1rem;
     }

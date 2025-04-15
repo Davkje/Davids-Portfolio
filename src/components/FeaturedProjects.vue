@@ -109,9 +109,8 @@
 <style scoped lang="scss">
 .projects-section {
   width: 100%;
-  min-width: 500px;
   padding: 1rem;
-  background: linear-gradient(to bottom, #ffffff, #000000);
+  background: linear-gradient(to bottom, var(--c-white), var(--c-black));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,14 +127,14 @@
 
     .project-container {
       color: black;
-      width: clamp(500px, 700px, 100%);
+      width: clamp(400px, 600px, 100%);
       height: 100%;
-      background: linear-gradient(to bottom, #ffffff, #eaeaea);
+      background: var(--gradient-white-soft);
       border-radius: 10px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.165);
+      box-shadow: 0 4px 10px var(--c-divider-light-1);
       img {
         width: 100%;
         height: clamp(200px, 400px, 500px);
@@ -152,17 +151,15 @@
       }
       .tech-container {
         display: flex;
+        flex-wrap: wrap;
         gap: 0.5rem;
         margin-top: 1rem;
         .tech-tag {
-          background-color: rgb(255, 229, 114);
+          background-color: var(--c-white);
           padding: 0.5rem;
-          border-radius: 6px;
+          border-radius: 8px;
           cursor: default;
           transition: background-color 0.1s ease-in-out;
-          &:hover {
-            background-color: rgb(255, 237, 158);
-          }
         }
       }
       .project-buttons {
@@ -170,7 +167,7 @@
         gap: 0.5rem;
         margin-top: 1rem;
         .link-btn {
-          background-color: rgb(255, 255, 252);
+          background-color: var(--c-yellow);
           color: black;
           font-size: 1.1rem;
           padding: 0.8rem 2rem;
@@ -178,7 +175,7 @@
           border: none;
           cursor: pointer;
           &:hover {
-            background-color: rgb(228, 228, 228);
+            background-color: var(--c-light-yellow);
           }
         }
       }

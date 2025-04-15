@@ -19,7 +19,6 @@
       <p class="tech">Adobe</p>
       <p class="tech">Logic Pro</p>
       <p class="tech">Wwise</p>
-      <p class="tech">Unreal Engine</p>
     </div>
   </div>
 </template>
@@ -27,30 +26,32 @@
 <style scoped lang="scss">
 .tech-section {
   width: 100%;
-  height: 400px;
-  background-color: rgb(255, 255, 255);
-  color: black;
+  height: 100%;
+  background-color: var(--c-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   .tech-stack {
+    // min-height: 270px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     .tech {
-      background-color: rgb(248, 248, 248);
+      background-color: var(--c-white-soft);
       padding: 0.5rem 1rem;
       border-radius: 8px;
+      transition: scale 0.2s ease-out;
       cursor: default;
-      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
       &:hover {
+        transition: scale 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         scale: 1.1;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.127);
+        box-shadow: 0px 4px 10px var(--c-divider-light-1);
       }
     }
   }

@@ -1,24 +1,32 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --c-white: #ffffff;
+  --c-white-soft: #fafafa;
+  --c-white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --c-black: #000000;
+  --c-black-soft: #1a1a1a;
+  --c-black-mute: #282828;
 
-  --vt-c-indigo: #2c3e50;
+  --c-light-blue: #6686f2;
+  --c-blue: #4c70e7;
+  --c-dark-blue: #3c5fd0;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --c-light-yellow: #ffe989;
+  --c-yellow: #ffe365;
+  --c-dark-yellow: #f4d85e;
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --c-divider-light-1: rgba(60, 60, 60, 0.143);
+  --c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --c-divider-dark-2: rgba(81, 81, 81, 0.48);
+
+  --c-text-light-1: var(--c-indigo);
+  --c-text-light-2: rgba(60, 60, 60, 0.66);
+  --c-text-dark-1: var(--c-white);
+  --c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --gradient-white-soft: linear-gradient(to bottom, var(--c-white), var(--c-white-mute));
 }
 
 /* semantic color variables for this project */
@@ -61,16 +69,11 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
+  background: var(--c-black);
+  transition: color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
+  font-family: Inter,
     Roboto,
     Oxygen,
     Ubuntu,
