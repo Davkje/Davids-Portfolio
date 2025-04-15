@@ -6,7 +6,7 @@
       <div class="top-section">
         <img
           class="profile-img"
-          src="../assets/images/profile_pic.JPG"
+          src="../assets/images/small_profile_pic.jpg"
           alt="Black and white image of David Kjellstrand"
           height="2048"
           width="1536"
@@ -15,7 +15,7 @@
         <div class="top-right-section">
           <h1>David Kjellstrand</h1>
           <h2>Front End Developer</h2>
-          <p>+ Digital Designer</p>
+          <!-- <p>Stockholm</p> -->
         </div>
       </div>
       <p>
@@ -40,7 +40,7 @@
         >
       </div>
       <div class="go-to-portfolio">
-        <a href="#featured-projects">See my portfolio below</a>
+        <a href="#featured-projects">Go to portfolio</a>
       </div>
     </div>
   </div>
@@ -51,13 +51,13 @@
   color: black;
   width: 100%;
   height: 700px;
-  background-image: url('../assets/images/profile_pic.jpg');
+  background-image: url('../assets/images/bg.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   .hero-container {
-    background-color: rgb(237, 237, 237);
+    background: linear-gradient(to bottom, #ffffff, #fbfbfb);
     width: 80%;
     max-width: 1100px;
     margin: auto;
@@ -102,13 +102,6 @@
       max-width: 500px;
       justify-content: space-between;
       margin-top: 1rem;
-      a {
-        color: black;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
     .go-to-portfolio {
       margin-top: 1rem;
@@ -117,6 +110,12 @@
       align-items: center;
       a {
         color: black;
+        background-color: rgb(255, 237, 158);
+        padding: 0.5rem 1.5rem;
+        border-radius: 8px;
+        &:hover {
+          background-color: rgb(255, 229, 112);
+        }
       }
     }
   }

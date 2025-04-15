@@ -1,32 +1,99 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+import { nextTick } from 'vue'
+
+const router = useRouter()
+
+const goToFeaturedProjects = () => {
+  router.push({ path: '/', hash: '#featured-projects' }).then(() => {
+    setTimeout(() => {
+      const el = document.querySelector('#featured-projects')
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' }) // 👈 instant scroll
+      }
+    }, 100)
+  })
+}
+</script>
 
 <template>
   <div class="about-section">
-    <h2>About Me</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt rem error dolores.
-      Assumenda perferendis quia similique quibusdam ratione dolorem recusandae ex error rerum
-      alias, nesciunt harum architecto cupiditate dignissimos?
-    </p>
+    <div>
+      <h2>Who?</h2>
+      <p>
+        Hi! I'm David Kjellstrand! An aspiring Front End Developer and former writer/producer with a
+        passion for all things creative! During the past 8 years as a freelancing audio creator I've
+        honed my creative, social and technical skills through working on multiple projects for
+        artists, labels, commercials and tv.
+      </p>
+    </div>
+    <div>
+      <h2>What?</h2>
+      <p>
+        What am I doing? We'll I'm trying a new path, moving away from music to coding, by studying
+        Front End Developement at Medieinstitutet and I'm looking for an internship for late 2025
+        and the spring of 2026!
+      </p>
+    </div>
+    <div>
+      <h2>Where?</h2>
+      <p>Stockholm is home! Been spenindg the past year outside Karlstad while studying though!</p>
+    </div>
+    <div>
+      <h2>Why...</h2>
+      <p>
+        ... dont you check out some of my work in my
+        <a href="#" @click.prevent="goToFeaturedProjects">portfolio</a> or if you already have,
+        listen to some music I've released over the years? Have a good one!
+      </p>
+    </div>
+    <iframe
+      class="spotify-player"
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/playlist/36iVvde48wbmv5WinHK1Y6?utm_source=generator&theme=0"
+      frameBorder="0"
+      allowfullscreen="false"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
   </div>
 </template>
 
 <style scoped lang="scss">
 .about-section {
   width: 100%;
-  height: 700px;
+  min-height: 94vh;
   padding: 1rem;
-  background-color: #f47d7d;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: black;
-  p {
-    max-width: 70vw;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.2rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      max-width: 70vw;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+    a {
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .spotify-player {
+    margin-top: 1rem;
+    width: 500px;
+    max-width: 500px;
+    height: 200px;
+    border-radius: 12px;
   }
 }
 </style>

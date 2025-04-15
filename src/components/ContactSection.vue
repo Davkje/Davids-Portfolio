@@ -6,14 +6,25 @@
       <div class="contacts">
         <h2>Get in touch!</h2>
         <p>+46 (0) 73 529 2002</p>
-        <p>david.kjellstrand@gmail.com</p>
+        <a href="mailto:david.kjellstrand@gmail.com">david.kjellstrand@gmail.com</a>
       </div>
       <div class="links-container">
-        <a href="">LinkedIn</a>
-        <a href="">Github</a>
-        <a href="">Instagram</a>
-        <a href="">Email</a>
+        <a
+          href="https://www.linkedin.com/in/david-kjellstrand-b6760113a/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/Davkje" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="mailto:david.kjellstrand@gmail.com">Email</a>
+        <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
+          >Instagram</a
+        >
       </div>
+      <p class="small-text">
+        This website was created fully by me, David. I used Vue as my framwork but other than that
+        its basic html and css.
+      </p>
     </div>
   </div>
 </template>
@@ -23,14 +34,16 @@
   color: black;
   font-size: 1.4rem;
   width: 100%;
-  height: 700px;
+  height: 100%;
+  min-height: 500px;
   background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   .contact-container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 229, 114);
+    border-radius: 10px;
     width: 80%;
     max-width: 80%;
     padding: 3rem;
@@ -46,20 +59,17 @@
       gap: 1rem;
     }
     .links-container {
-      background-color: rgba(0, 0, 0, 0.183);
       display: flex;
       margin: auto;
       max-width: 500px;
       justify-content: space-between;
       margin-top: 1rem;
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 1.2rem;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+      gap: 1rem;
+    }
+    .small-text {
+      color: rgba(0, 0, 0, 0.716);
+      padding-top: 1rem;
+      font-size: 0.8rem;
     }
   }
 }
