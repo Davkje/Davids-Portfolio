@@ -42,6 +42,14 @@
         <a href="#featured-projects">Go to portfolio</a>
       </div>
     </div>
+    <img
+      class="small-profile-img"
+      src="../assets/images/small_profile_pic.jpg"
+      alt="Black and white image of David Kjellstrand"
+      height="2048"
+      width="1536"
+      loading="lazy"
+    />
   </div>
 </template>
 
@@ -49,16 +57,19 @@
 .hero-section {
   color: var(--c-black);
   width: 100%;
-  min-height: 700px;
+  min-height: 650px;
   background-image: url('../assets/images/bg.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 1rem;
   background-size: cover;
   padding: 2rem 1rem;
   .hero-container {
     background: var(--gradient-white-soft);
     width: clamp(300px, 90%, 1100px);
+    height: 100%;
     padding: 2rem;
     border-radius: 8px;
     .top-section {
@@ -66,7 +77,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
       .profile-img {
         width: 20%;
         height: 20%;
@@ -113,6 +124,22 @@
         }
       }
     }
+  }
+  .small-profile-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-section .hero-container .top-section .profile-img {
+    display: none;
+  }
+  .hero-section .small-profile-img {
+    display: block;
+    width: clamp(300px, 90%, 1100px);
+    border-radius: 8px;
+    height: 45vw;
+    object-fit: cover;
   }
 }
 </style>

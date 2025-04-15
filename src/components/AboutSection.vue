@@ -32,7 +32,7 @@ const goToFeaturedProjects = () => {
       <p>
         What am I doing? We'll I'm trying a new path, moving away from music to coding, by studying
         Front End Developement at Medieinstitutet and I'm looking for an internship for late 2025
-        and the spring of 2026!
+        and spring of 2026!
       </p>
     </div>
     <div>
@@ -64,7 +64,7 @@ const goToFeaturedProjects = () => {
   width: 100%;
   min-height: 94vh;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--c-white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -75,23 +75,26 @@ const goToFeaturedProjects = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
+    h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+    }
     p {
-      max-width: 70vw;
+      width: clamp(200px, 70vw, 900px);
       text-align: center;
       margin: 0 auto;
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 2vw, 1.2rem);
     }
     a {
-      color: #000000;
       font-weight: bold;
       cursor: pointer;
     }
   }
 
   .spotify-player {
-    margin-top: 1rem;
-    width: 500px;
-    max-width: 500px;
+    margin-top: 3rem;
+    width: clamp(30px, 90%, 500px);
     height: 200px;
     border-radius: 12px;
   }

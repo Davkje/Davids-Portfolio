@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="project-container">
-        <img src="../assets/images/tictactoe-preview.png" alt="Preview of the Dino Game" />
+        <img src="../assets/images/tictactoe-preview.png" alt="Preview of the Tic Tac Toe Game" />
         <h3>Tic Tac Toe</h3>
         <p>
           A simple yet fleshed out game of Tic Tac Toe. The game is built with TypeScript, HTML and
@@ -70,12 +70,12 @@
         </div>
       </div>
       <div class="project-container">
-        <img src="../assets/images/cookies-preview.png" alt="Preview of the Dino Game" />
+        <img src="../assets/images/cookies-preview.png" alt="Preview of the Cookies Webshop" />
         <h3>Cookies Webshop</h3>
         <p>
           My first website using JavaScript! The website is a simple webshop where you can purchase
           cookies. The website is built with JavaScript, HTML and SCSS. It has a working cart,
-          checkout-form with validation and filtering for browsing the cookies!
+          checkout-form, validation and filtering for browsing!
         </p>
         <div class="tech-container">
           <span class="tech-tag">Javascript</span>
@@ -96,6 +96,73 @@
           <a
             class="link-btn"
             href="https://github.com/Davkje/Davids-Cookies"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
+        <img src="../assets/images/quiz-preview.png" alt="Preview of the Ballerina Quiz" />
+        <h3>Ballerina Quiz</h3>
+        <p>
+          A small group project where we created a quiz about "Ballerinas" (a Swedish cookie). Its
+          created with TypeScript and a big focus was working together using the Agile methodology.
+          The quiz has a timer, scoresystem and randomized questions.
+        </p>
+        <div class="tech-container">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Html</span>
+          <span class="tech-tag">Scss</span>
+          <span class="tech-tag">Quiz</span>
+          <span class="tech-tag">Agile</span>
+          <span class="tech-tag">Arrays</span>
+        </div>
+        <div class="project-buttons">
+          <a
+            class="link-btn"
+            href="https://medieinstitutet.github.io/fed24d-js-intro-inl-2-quiz-ballerinas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+          <a
+            class="link-btn"
+            href="https://github.com/medieinstitutet/fed24d-js-intro-inl-2-quiz-ballerinas"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
+        <img
+          src="../assets/images/codesmell-preview.png"
+          alt="Preview of the Code Smells assignment"
+        />
+        <h3>Code Smells</h3>
+        <p>
+          This was a school assignment where we had to clean up a codebase with a lot of "Code
+          Smells". Its a simpl layout where it fetches and displays podcasts. This was also the
+          first time I workedd with API's.
+        </p>
+        <div class="tech-container">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">API</span>
+          <span class="tech-tag">Refactor</span>
+          <span class="tech-tag">Bugfixing</span>
+        </div>
+        <div class="project-buttons">
+          <a
+            class="link-btn"
+            href="https://medieinstitutet.github.io/fed24d-arbetsmetodik-inl-1-Davkje/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+          <a
+            class="link-btn"
+            href="https://github.com/Medieinstitutet/fed24d-arbetsmetodik-inl-1-Davkje"
             target="_blank"
             rel="noopener noreferrer"
             >Github</a
@@ -129,6 +196,7 @@
       color: black;
       width: clamp(400px, 600px, 100%);
       height: 100%;
+      max-height: 100vh;
       background: var(--gradient-white-soft);
       border-radius: 10px;
       padding: 1rem;
@@ -137,7 +205,7 @@
       box-shadow: 0 4px 10px var(--c-divider-light-1);
       img {
         width: 100%;
-        height: clamp(200px, 400px, 500px);
+        height: clamp(200px, 45vw, 420px);
         object-fit: cover;
         border-radius: 10px;
       }
@@ -146,14 +214,14 @@
         font-size: 1.6rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
         line-height: 1.5;
       }
       .tech-container {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         .tech-tag {
           background-color: var(--c-white);
           padding: 0.5rem;
@@ -180,6 +248,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects-section .projects .project-container .project-buttons {
+    justify-content: center;
   }
 }
 </style>

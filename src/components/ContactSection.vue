@@ -43,10 +43,9 @@
   background-size: cover;
   .contact-container {
     background-color: #ffe572;
-    background: radial-gradient(circle, #ffe572, #ffdf50);
+    background: radial-gradient(circle, var(--c-light-yellow), var(--c-dark-yellow));
     border-radius: 10px;
-    width: 80%;
-    max-width: 80%;
+    width: 80vw;
     padding: 3rem;
     display: flex;
     flex-direction: column;
