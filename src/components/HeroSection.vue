@@ -36,6 +36,7 @@
         <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
           >Instagram</a
         >
+        <a href="/assets/david-kjellstrand-cv.png" download type="img/png">CV</a>
       </div>
       <div class="go-to-portfolio">
         <a href="#featured-projects">Go to portfolio</a>
