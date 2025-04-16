@@ -9,7 +9,7 @@ const goToFeaturedProjects = () => {
     setTimeout(() => {
       const el = document.querySelector('#featured-projects')
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' }) // 👈 instant scroll
+        el.scrollIntoView({ behavior: 'smooth' })
       }
     }, 100)
   })
@@ -52,7 +52,6 @@ const goToFeaturedProjects = () => {
       style="border-radius: 12px"
       src="https://open.spotify.com/embed/playlist/36iVvde48wbmv5WinHK1Y6?utm_source=generator&theme=0"
       frameBorder="0"
-      allowfullscreen="false"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"
     ></iframe>

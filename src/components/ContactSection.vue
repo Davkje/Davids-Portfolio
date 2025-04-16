@@ -16,10 +16,7 @@
           >LinkedIn</a
         >
         <a href="https://github.com/Davkje" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="mailto:david.kjellstrand@gmail.com">Email</a>
-        <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
-          >Instagram</a
-        >
+        <a href="assets/david-kjellstrand-cv.pdf" download>Download CV</a>
       </div>
       <p class="small-text">
         This website was created fully by me, David. I used Vue as my framwork but other than that
@@ -71,6 +68,7 @@
       color: rgba(0, 0, 0, 0.716);
       padding-top: 1rem;
       font-size: 0.8rem;
+      text-align: center;
     }
   }
 }

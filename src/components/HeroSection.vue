@@ -33,10 +33,10 @@
         >
         <a href="https://github.com/Davkje" target="_blank" rel="noopener noreferrer">Github</a>
         <a href="mailto:david.kjellstrand@gmail.com">Email</a>
-        <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
+        <!-- <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
           >Instagram</a
-        >
-        <a href="assets/david-kjellstrand-cv.pdf" download>CV</a>
+        > -->
+        <a href="assets/david-kjellstrand-cv.pdf" download>Download CV</a>
       </div>
       <div class="go-to-portfolio">
         <a href="#featured-projects">Go to portfolio</a>
@@ -65,7 +65,7 @@
   flex-direction: column;
   gap: 1rem;
   background-size: cover;
-  padding: 2rem 1rem;
+  padding: 0 1rem 2rem 1rem;
   .hero-container {
     background: var(--gradient-white-soft);
     width: clamp(300px, 90%, 1100px);

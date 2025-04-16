@@ -103,6 +103,41 @@
         </div>
       </div>
       <div class="project-container">
+        <img
+          src="../assets/images/designswap-preview.png"
+          alt="Preview of the Code Smells assignment"
+        />
+        <h3>Design Swap</h3>
+        <p>
+          Group project where we designed a website and gave it to another group to code. We got
+          this "movie-premiere-site" that we created using Vue and Typescript. This was a fun
+          challenge being handed a design and doing our best to bring it into reality!
+        </p>
+        <div class="tech-container">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Vue</span>
+          <span class="tech-tag">Design</span>
+          <span class="tech-tag">Html</span>
+          <span class="tech-tag">Scss</span>
+        </div>
+        <div class="project-buttons">
+          <a
+            class="link-btn"
+            href="https://medieinstitutet.github.io/fed24d-grafiska-verktyg-kejsartamarinerna/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+          <a
+            class="link-btn"
+            href="https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-kejsartamarinerna"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
         <img src="../assets/images/quiz-preview.png" alt="Preview of the Ballerina Quiz" />
         <h3>Ballerina Quiz</h3>
         <p>
