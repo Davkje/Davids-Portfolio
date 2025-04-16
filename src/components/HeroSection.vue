@@ -36,7 +36,7 @@
         <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
           >Instagram</a
         >
-        <a href="/assets/david-kjellstrand-cv.png" download type="img/png">CV</a>
+        <a href="assets/david-kjellstrand-cv.pdf" download>CV</a>
       </div>
       <div class="go-to-portfolio">
         <a href="#featured-projects">Go to portfolio</a>
@@ -58,7 +58,7 @@
   color: var(--c-black);
   width: 100%;
   min-height: 650px;
-  background-image: url('../assets/images/bg.jpg');
+  background-image: url('../assets/images/bg-dark.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
