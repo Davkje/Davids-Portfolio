@@ -18,12 +18,11 @@
         </div>
       </div>
       <p>
-        Aspiring Front End Developer and former writer/producer with a creative mindset and a
-        passion for creating visually appealing and user-friendly web applications. Seeking a
-        challenging internship to further develop my skills in modern front end development and
-        contribute to innovative and interesting projects. During the past 8 years as a signed and
-        freelancing audio creator I've honed my creative and technical abilities through working on
-        multiple projects for artists, labels, commercials and tv.
+        Hi! I'm David, an aspiring Front End Developer and long time Writer/Producer. SeekingRight
+        now im looking for an internship to further develop my skills in modern front end
+        development and contribute to innovative and interesting projects. During the past 8 years
+        as a signed and freelancing audio creator I've honed my creative and technical skills
+        through working on multiple projects for artists, labels, commercials and tv.
       </p>
       <div class="links-container">
         <a

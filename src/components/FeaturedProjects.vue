@@ -41,9 +41,9 @@
         <img src="../assets/images/tictactoe-preview.png" alt="Preview of the Tic Tac Toe Game" />
         <h3>Tic Tac Toe</h3>
         <p>
-          A simple yet fleshed out game of Tic Tac Toe. The game is built with TypeScript, HTML and
-          SCSS. It has a working gameloop, light and dark mode and audio with a volume slider. Check
-          it out!
+          A simple yet fleshed out game of Tic Tac Toe! The game is built with TypeScript, HTML and
+          SCSS. It has a working gameloop, light and dark mode and adaptive audio with a volume
+          slider. Check it out!
         </p>
         <div class="tech-container">
           <span class="tech-tag">TypeScript</span>
@@ -143,8 +143,8 @@
         <h3>Code Smells</h3>
         <p>
           This was a school assignment where we had to clean up a codebase with a lot of "Code
-          Smells". Its a simpl layout where it fetches and displays podcasts. This was also the
-          first time I workedd with API's.
+          Smells". It's a simple layout where it fetches and displays podcasts. This was also the
+          first time I worked with API's.
         </p>
         <div class="tech-container">
           <span class="tech-tag">TypeScript</span>
@@ -242,6 +242,7 @@
           border-radius: 8px;
           border: none;
           cursor: pointer;
+          transition: background-color 0.2s ease;
           &:hover {
             background-color: var(--c-light-yellow);
           }
