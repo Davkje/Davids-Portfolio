@@ -36,7 +36,7 @@
         <!-- <a href="https://www.instagram.com/dk.strand/" target="_blank" rel="noopener noreferrer"
           >Instagram</a
         > -->
-        <a href="assets/david-kjellstrand-cv.pdf" download>Download CV</a>
+        <a href="assets/david-kjellstrand-cv.pdf" download>CV</a>
       </div>
       <div class="go-to-portfolio">
         <a href="#featured-projects">Go to portfolio</a>
@@ -106,7 +106,7 @@
       display: flex;
       margin: auto;
       max-width: 500px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-top: 1rem;
     }
     .go-to-portfolio {
@@ -132,6 +132,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .hero-section .hero-container {
+    padding: 1rem;
+  }
+
   .hero-section .hero-container .top-section .profile-img {
     display: none;
   }

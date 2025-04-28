@@ -243,7 +243,14 @@
         height: clamp(200px, 45vw, 420px);
         object-fit: cover;
         border-radius: 10px;
+        object-position: center center;
+        transition: filter 0.3s ease;
       }
+
+      &:hover img {
+        filter: brightness(85%) contrast(110%);
+      }
+
       h3 {
         margin: 0.5rem 0;
         font-size: 1.6rem;
